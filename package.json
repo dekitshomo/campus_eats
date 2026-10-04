@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
@@ -21,7 +21,11 @@
   },
   "homepage": "https://github.com/dekitshomo/campus_eats#readme",
   "dependencies": {
+<<<<<<< HEAD
     "bcrypt": "^6.0.0",
+=======
+    "better-sqlite3": "^13.0.3",
+>>>>>>> fc0be189125a0c16fab9dea3e6043bb62c369207
     "dotenv": "^17.4.2",
     "ejs": "^6.0.1",
     "express": "^5.2.1",
