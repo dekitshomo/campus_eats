@@ -1,6 +1,7 @@
 const Restaurant = require('../models/Restaurant');
 const MenuItem = require('../models/MenuItem');
 const Feedback = require('../models/Feedback');
+
 exports.dashboard = async (req, res) => {
   const restaurant = await Restaurant.getRestaurantByOwnerId(req.session.user.id);
   if (!restaurant) {

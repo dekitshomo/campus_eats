@@ -25,3 +25,6 @@ exports.getRestaurantById = (id) => {
   );
 };
 
+exports.getRestaurantByOwnerId = (ownerId) => {
+  return db.oneOrNone('SELECT * FROM restaurants WHERE owner_id = $1', [ownerId]);
+};
