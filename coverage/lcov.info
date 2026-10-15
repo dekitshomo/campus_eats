@@ -50,7 +50,7 @@ FNH:0
 DA:1,4
 DA:2,4
 DA:4,4
-DA:12,4
+DA:13,4
 LF:4
 LH:4
 BRDA:5,0,0,4
@@ -61,8 +61,10 @@ BRDA:7,2,0,4
 BRDA:7,2,1,0
 BRDA:8,3,0,4
 BRDA:8,3,1,0
-BRF:8
-BRH:4
+BRDA:10,4,0,0
+BRDA:10,4,1,4
+BRF:10
+BRH:5
 end_of_record
 TN:
 SF:config\mailer.js
