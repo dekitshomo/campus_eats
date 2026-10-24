@@ -35,6 +35,13 @@ exports.createOrder = async (req, res) => {
     return res.status(400).json({ error: 'Invalid menu item' });
   }
 
+<<<<<<< HEAD
+=======
+  if (!req.session || !req.session.user) {
+    return res.status(401).json({ error: 'Unauthorized: Please log in to place an order' });
+  }
+
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
   const order = await Order.createOrder(item.id, item.price, req.session.user.id);
   res.status(201).json(order);
 };

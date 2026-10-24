@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "jest",
     "start": "node server.js",
     "dev": "nodemon server.js"
@@ -11,28 +12,57 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/krys1485/Campus_eats.git"
+=======
+    "test": "node --test",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dekitshomo/campus_eats.git"
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
+<<<<<<< HEAD
     "url": "https://github.com/krys1485/Campus_eats/issues"
   },
   "homepage": "https://github.com/krys1485/Campus_eats#readme",
   "dependencies": {
     "bcrypt": "^6.0.0",
+=======
+    "url": "https://github.com/dekitshomo/campus_eats/issues"
+  },
+  "homepage": "https://github.com/dekitshomo/campus_eats#readme",
+  "dependencies": {
+<<<<<<< HEAD
+    "bcrypt": "^6.0.0",
+=======
+    "better-sqlite3": "^13.0.3",
+>>>>>>> fc0be189125a0c16fab9dea3e6043bb62c369207
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
     "dotenv": "^17.4.2",
     "ejs": "^6.0.1",
     "express": "^5.2.1",
     "express-session": "^1.19.0",
+<<<<<<< HEAD
     "mongodb": "7.5.0",
+=======
+    "mongodb": "^7.7.0",
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
     "nodemailer": "^10.0.10",
     "pg-promise": "^12.7.1"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "jest": "^30.5.2",
     "nodemon": "^3.1.14",
     "supertest": "^7.3.1"
+=======
+    "nodemon": "^3.1.14"
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
   }
 }

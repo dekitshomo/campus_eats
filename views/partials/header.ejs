@@ -10,11 +10,19 @@
 </head>
 <body>
   <header class="site-header">
+<<<<<<< HEAD
     <div class="logo">Campus Eats</div>
     <nav>
       <a href="/">Home</a>
       <a href="/about">About</a>
       <% if (user) { %>
+=======
+    <div class="logo">🍽️ Campus Eats</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <% if (typeof user !== 'undefined' && user) { %>
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
         <% if (user.role === 'admin') { %><a href="/admin/dashboard">My Dashboard</a><% } %>
         <% if (user.role === 'superadmin') { %><a href="/superadmin/dashboard">Super Admin</a><% } %>
         <span>Hi, <%= user.name %></span>

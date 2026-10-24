@@ -213,6 +213,10 @@ main {
   justify-content: center;
   margin: 0 auto 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
 .quantity-form {
   display: flex;
   align-items: center;
@@ -240,6 +244,10 @@ main {
   background: #e63946;
   margin-top: 8px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
 .stats-bar {
   text-align: center;
   color: var(--text-muted);
@@ -278,6 +286,11 @@ main {
   margin: 0 0 8px;
   font-size: 1rem;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
 .order-lookup {
   text-align: center;
   padding: 10px 0 30px;
@@ -310,6 +323,11 @@ main {
   min-height: 1.5em;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
 .auth-form {
   max-width: 380px;
   margin: 40px auto;
@@ -385,3 +403,7 @@ main {
   font-weight: 600;
   margin: 0 0 16px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3

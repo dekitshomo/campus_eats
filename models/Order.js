@@ -1,5 +1,19 @@
 const db = require('../config/db');
 
+<<<<<<< HEAD
+=======
+exports.createOrder = (menuItemId, price) => {
+  return db.tx(async (t) => {
+    const order = await t.one(
+      'INSERT INTO orders (menu_item_id, quantity, price_at_order) VALUES ($1, 1, $2) RETURNING *',
+      [menuItemId, price]
+    );
+    await t.none('UPDATE menu_items SET times_ordered = times_ordered + 1 WHERE id = $1', [menuItemId]);
+    return order;
+  });
+};
+
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
 exports.getOrderById = (id) => {
   return db.oneOrNone(
     `SELECT orders.*, menu_items.name AS item_name
@@ -10,6 +24,10 @@ exports.getOrderById = (id) => {
   );
 };
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
 exports.updateQuantity = (id, quantity) => {
   return db.one('UPDATE orders SET quantity = $1 WHERE id = $2 RETURNING *', [quantity, id]);
 };
@@ -36,6 +54,10 @@ exports.getPopularItems = () => {
   `);
 };
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e7aab9f0c44566b32bfd8c8f30f8f7c3e7a83a3
 exports.createOrder = (menuItemId, price, customerId) => {
   return db.tx(async (t) => {
     const order = await t.one(
